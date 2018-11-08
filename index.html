@@ -18,8 +18,8 @@
   </head>
   <body>
        <!-- A navbar can be created just by using Bootstrap's nav classes. They don't require the list-based approach. -->
-       <div class="container shadow-lg p-1 mb-1 bg-white rounded">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+       <div class="container shadow-lg p-1 mb-5 bg-white rounded">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                  <a class="navbar-brand" href="#">Bootsicle</a>
                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -28,8 +28,8 @@
                       <div class="navbar-nav">
                            <a class="nav-item nav-link active" href="#">Home<span class="sr-only">(current)</span></a>
                            <a class="nav-item nav-link" href="#grid">Grid</a>
-                           <a class="nav-item nav-link" href="#">Navbar</a>
-                           <a class="nav-item nav-link" href="#">Forms</a>
+                           <a class="nav-item nav-link" href="#nav">Navbar</a>
+                           <a class="nav-item nav-link" href="#forms">Forms</a>
                       </div>
                  </div>
                  <form class="form-inline my-2 my-lg-0">
@@ -82,17 +82,79 @@
       </div>
     </div>
     <div class="container">
-         <div class="invisible">
-              <div class="row">
-                   <div class= "col-md-12">
-                        <!-- spans 12 columns -->
-                        <div class="embed-responsive embed-responsive-16by9">
-                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/q_qUiytLYRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+         <h1 id="nav">Navbar Demo</h1>
+         <nav id="nav-demo" class="navbar navbar-expand-md navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">Bootsicle</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   <div class="navbar-nav">
+                   <a class="nav-link" href="#nav-1">Nav 1</a>
+                   <a class="nav-link" href="#nav-2">Nav 2</a>
+                   <a class="nav-link" href="#nav-3">Nav 3</a>
+                   </div>
+              </div>
+         </nav>
+
+         <div data-spy="scroll" data-target="#nav-demo" data-offset="0">
+              <h4 id="nav-1">Nav 1</h4>
+              <p>Info about navs here</p>
+              <h4 id="nav-2">Nav 2</h4>
+              <p>Info about navs here</p>
+              <h4 id="nav-3">Nav 3</h4>
+              <p>Info about navs here</p>
+         </div>
+    </div>
+    <div class="container">
+         <h1 id="forms">Form Demo</h1>
+         <form>
+              <div class="form-row">
+                   <div class="col-md-6">
+                        <div class="form-group col-md-6">
+                             <label for="inputFirstName">First Name</label>
+                             <input type="text" class="form-control" placeholder="First Name">
+                        </div>
+                   </div>
+                   <div class="col-md-6 align-items-end">
+                        <p> Explain forms here </p>
+                   </div>
+              </div>
+              <div class="form-row">
+                   <div class="col-md-6">
+                        <div class="form-group col-md-6">
+                             <label for="inputLastName">Last Name</label>
+                             <input type="text" class="form-control" placeholder="Last Name">
                         </div>
                    </div>
               </div>
-         </div>
+              <div class="form-row">
+                   <div class="col-md-6">
+                        <div class="form-group col-md-6">
+                             <label for="inputEmail">Email</label>
+                             <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                   </div>
+              </div>
+              <div class="form-row">
+                   <div class="col-md-6">
+                        <div class="form-group col-md-6">
+                             <label for="inputPassword">Password</label>
+                             <input type="text" class="form-control" placeholder="Password">
+                        </div>
+                   </div>
+              </div>
+              <div class="form-row">
+                   <div class="col-md-6">
+                        <div class="form-group col-md-6">
+                             <label for="inputCPassword">Confirm Password</label>
+                             <input type="text" class="form-control" placeholder="Confirm Password">
+                        </div>
+                   </div>
+              </div>
     </div>
+
+
 
 
   </body>
