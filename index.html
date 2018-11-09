@@ -54,7 +54,7 @@
                       <h5 class="text-info">Where do I get Bootstrap?</h5>
                       <p> You can load Bootstrap into your <code class="highlighter-rouge">&lt;head&gt;</code> tag of your html file by copy-pasting
                            the stylesheet <code class="highligher-rouge">&lt;link&gt;</code> below.</p>
-                           <pre class="shadow-sm p-1 mb-5 bg-light rounded"><code>&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"&gt;</code></pre>
+                           <pre class="shadow-sm p-1 mb-5 bg-light rounded"><code>&lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous&gt;</code></pre>
                       <alert class="alert alert-warning float-right p-1 ">You probably should <a class="text-info" href="https://groups.google.com/a/stuy.edu/d/msg/softdev18-19/NvSmaDF_sJA/ta2FO6zmAQAJ">learn more about CDNs here.</a></alert><br>
                       <h5 class="text-info"> How do I make a container?</h5>
                       <h7 class="text-dark">All it takes is a few divs, as seen below. </h7>
@@ -122,7 +122,8 @@
                  <div class="col-md-1">
                  </div>
                  <div class="col-md-10">
-                      <h7 class="text-dark">Here is our source code for you to try it yourself!</h7>
+                      <br>
+                      <alert class="alert alert-warning p-1">Here is our source code for you to try it yourself!</alert>
                       <pre class="shadow-sm p-1 mb-5 bg-light rounded">
                       <code>&lt;div class="row"&gt;
                            &lt;div class="col-md-1"&gt;
@@ -150,8 +151,42 @@
                  </div>
                  <div class="col-md-10">
                       <h5 class="text-info">Why use Bootstrap navbars?</h5>
+                      <p> Bootstrap navbars take away the necessity of using lists to create navbars. Instead, links
+                          can be classified as nav-items and nav-links and be incorporated into a navbar.
+                      </p>
                  </div>
-
+            </div>
+            <div class="row">
+                 <div class="col-md-1">
+                 </div>
+                 <div id="doggo-bar" class="nav flex-column col-md-4">
+                      <a class="nav-item nav-link text-danger" href="#gold">Golden Doggo</a>
+                      <a class="nav-item nav-link text-danger" href="#toast">Toasty Doggo</a>
+                 </div>
+                 <div class="col-md-5">
+                      <a href="#nav">
+                      <h3 id="gold" class="text-center p-3 text-primary">Golden Retriever</h3></a>
+                      <img src="goldie.jpeg" class="img-fluid" alt="Responsive image"></img>
+                      <a href="#nav">
+                      <h3 id="toast" class="text-center p-3 text-primary">Corgi</h3></a>
+                      <img src="corgi.jpeg" class="img-fluid" alt="Responsive image"></img>
+                 </div>
+            </div>
+            <div class="row pt-3">
+                 <div class="col-md-1">
+                 </div>
+                 <div class="col-md-10">
+                      <alert class="alert alert-warning p-1">Here is our source code for our vertical navbar you can try yourself!</alert>
+                      <pre class="shadow-sm p-2 mb-5 bg-light rounded">
+                    <code>&lt;div id="doggo-bar" class="nav flex-column col-md-4"&gt;
+                         &lt;a class="nav-item nav-link text-danger" href="#gold"Golden Doggo&gt;&lt;/a&gt;
+                         &lt;a class="nav-item nav-link text-danger" href="#toast"Toasty Doggo&gt;&lt;/a&gt;
+                    &lt;/div&gt;</code></pre>
+                 </div>
+            </div>
        </div>
+       <br><br><br><br>
+       <footer class="-footer bg-dark fixed-bottom text-right text-light">&copy;Bootsicle -- Johnny Wong and Aleksandra Koroza</footer>
+
   </body>
 </html>
