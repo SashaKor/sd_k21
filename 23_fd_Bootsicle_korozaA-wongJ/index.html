@@ -62,7 +62,8 @@
          <div class="grid-x grid-margin-x">
               <div class="cell small-12">
                    <h4 id="grid" style="color:#e3b505;">XY Grid System</h4>
-                   <p> Foundation's grid system separates a webpage into grids. These grids can be further divided into cell-blocks. You can find a basic <b>grid-x</b> below.</p>
+                   <p> Foundation's grid system separates a webpage into grids. These grids can be further divided into cell-blocks. You can find a basic <b>grid-x</b> below.
+                   Try changing the size of the window to see how cell proportions are preserved.</p>
               </div>
               <div class="cell small-12">
                    <div class="warning callout text-center"><b>I'm a 12 cell div.</b></p></div>
@@ -137,7 +138,11 @@
                  </ul>
                  <br>
                  <div class="cell small-4">
-                      <p> Navbars can be created easily with Foundation's classes made for <a href="https://foundation.zurb.com/sites/docs/menu.html">navigation</a>. The navbar above is a <b>vertical menu</b>.<b><i style="color:#e3b505"> <br>Refer to lines 131-141 for the source code.</i></b></p>
+                      <p> Navbars can be created easily with Foundation's classes made for <a href="https://foundation.zurb.com/sites/docs/menu.html">navigation</a>.
+                        The navbar above is a <b>vertical menu</b>. Click on the navbar links to be sent to the appropriate
+                        cell. Please note that the cells to the right demonstrate the use of callouts, which combine the functionality of panels (elements that easily outline sections of the page)
+                        and alerts (a feature used to communicate success, warnings or other information by a differing style).
+                        <b><i style="color:#e3b505"> <br>Refer to lines 131-141 for the source code.</i></b></p>
                  </div>
             </div>
             <div class="cell small-8">
@@ -172,6 +177,69 @@
             <div class="cell small-12">
                  <h4 id="forms" style="color:#e3b505;">Forms</h4>
             </div>
+            <div class="cell small-12">
+                <p> Foundation facilitates the inclusion of form components on webpages. Shown below are some examples of forms that can be easily done with foundation!</p>
+            </div>
+            <form>
+              <div class="grid-x grid-padding-x">
+                <div class="medium-6 cell">
+                  <label>Input Section 1
+                    <input type="text" placeholder=".medium-6.cell">
+                  </label>
+                </div>
+                <div class="medium-6 cell">
+                  <label>Input Section 2
+                    <input type="text" placeholder=".medium-6.cell">
+                  </label>
+                </div>
+                <div class="medium-8 cell">
+                <label>
+                  How many kittens?
+                  <input type="number" value="100">
+                </label>
+              </div>
+              <div class="medium-8 cell">
+              <label>
+                What is your favorite movie?
+                <textarea placeholder="None"></textarea>
+              </label>
+            </div>
+            <div class="medium-8 cell">
+            <label>Select Menu
+              <select>
+                <option value="husker">Bird</option>
+                <option value="starbuck">Cat</option>
+                <option value="hotdog">Heaven</option>
+                <option value="apollo">Food</option>
+              </select>
+            </label>
+            <div class="medium-8 cell">
+              </div>
+            <div class="small-3 cell">
+            <a href="#" class="button">Submit Button</a>
+          </div>
+          </form>
+          <div class="cell small-12">
+              <p> What is shown above is only a small snippet of the kinds of forms you can create using Foundation. See more examples <a href="https://foundation.zurb.com/sites/docs/forms.html">here</a>.
+                You should also see how we added forms in lines 183-221 in our source code.
+              </p>
+          </div>
+          <div class="cell small-12">
+               <div id="p_nav" class="primary callout">
+                    <p> Please note the usage of input type and label in the following code:
+                    <pre class="secondary callout">
+                      &lt;label&gt;
+                      How many kittens?
+                      &lt;input type="number" value="100"&gt;
+                    &lt;/label&gt;
+                  </pre>
+                  </p>
+               </div>
+          </div>
+       </div>
+       <div class="cell small-12">
+           <p> The best way to learn is to try it out! Best of luck in your Foundation adventures!
+           </p>
        </div>
       </div>
        <footer class="top-bar" style="background-color:#e3b505;">
